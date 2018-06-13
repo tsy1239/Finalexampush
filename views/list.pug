@@ -1,0 +1,25 @@
+html
+<!--link(rel="stylesheet", href="/style.css")-->
+  head
+    title= "list"
+  body
+    h1= "List"
+    span
+    table
+      <tbody>
+        <tr>
+            <td >
+                form(action="/input", method="post")
+                    input(type="text" name="msg" placeholder="input")
+                    input(type="submit", value="submit")
+                    input(type="reset", value="Cancle")
+            </td>
+        </tr>
+        each val in list
+            tr
+                td #{val.id}
+                td #{val.name}
+                td 
+                    a(href="./delete/"+val.id) delete
+      </tbody>
+    table

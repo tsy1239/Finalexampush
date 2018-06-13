@@ -1,0 +1,40 @@
+html
+<!--link(rel="stylesheet", href="/style.css")-->
+  head
+    title= "jfjeskjgn"
+  body
+    h1= "todolist"
+    input(type="button", value="edit")
+    span
+    input(type="text", name="" align="right")
+    input(type="button", value="search")
+    span
+    table
+      <thead>
+          <tr>
+              <th>Task</th>
+              <th>Action</th>
+          </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td>
+                input(type="text", name="",)
+            </td>
+            <td>
+                <button className="save-btn">Save</button>
+                <button className="cancel-btn">Cancel</button>
+            </td>
+        </tr>
+
+        <tr>
+          each val in list
+            <td>
+                #{val.id}
+            </td>
+            <td>
+                #{val.name}
+            </td>
+        </tr>
+      </tbody>
+    table
